@@ -3,10 +3,378 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alex Patil</title>
+  <title>Dev Portfolio — Systems &amp; Automation</title>
+  <meta name="description" content="Senior developer specializing in algorithmic trading, automation systems, and backend infrastructure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Alex Patil</h1>
-  <p>Independent Software Engineer</p>
+
+  <!-- ========== NAV ========== -->
+  <header id="navbar">
+    <nav class="nav-inner container">
+      <a href="#hero" class="nav-logo">YN<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="container hero-inner">
+      <p class="hero-label">Available for contracts &amp; consulting</p>
+      <h1 class="hero-title">
+        I build systems that<br />
+        <span class="accent">automate work</span><br />
+        and generate results.
+      </h1>
+      <p class="hero-sub">
+        Senior developer focused on algorithmic trading, process automation,
+        and backend infrastructure. I ship production-grade systems — fast,
+        clean, and built to last.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-meta">
+        <span class="mono">5+ years production systems</span>
+        <span class="sep">·</span>
+        <span class="mono">Trading &amp; Government Automation</span>
+        <span class="sep">·</span>
+        <span class="mono">Node.js · Go · Python</span>
+      </div>
+    </div>
+    <!-- Subtle grid background -->
+    <div class="hero-grid" aria-hidden="true"></div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <div class="container section-grid">
+      <div class="section-label-col">
+        <span class="section-label mono">01 — About</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-title">Not a generalist.<br />A specialist in systems that matter.</h2>
+        <div class="about-body">
+          <p>
+            I've spent years building the kind of software that nobody sees — but
+            everyone depends on. Automated trading pipelines processing thousands
+            of forex signals per day. Government-facing bots that eliminate
+            hours of manual form submission at tehsil offices. Chrome extensions
+            that reshape how VLE operators handle daily workflows.
+          </p>
+          <p>
+            My work sits at the intersection of precision and pragmatism. I don't
+            build proofs-of-concept — I build systems that run in production,
+            handle edge cases, and reduce human labor at scale. Every project I
+            take on has a clear measurable outcome: fewer errors, less time,
+            more throughput.
+          </p>
+          <p>
+            I operate as a solo developer, which means I own every layer —
+            architecture, implementation, deployment, and iteration. No
+            hand-offs. No miscommunication. Just results.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num accent">5+</span>
+            <span class="stat-label">Years in production</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num accent">10k+</span>
+            <span class="stat-label">Daily automated trades routed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num accent">80%</span>
+            <span class="stat-label">Avg. labor reduction in automation projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STACK ========== -->
+  <section id="stack">
+    <div class="container section-grid">
+      <div class="section-label-col">
+        <span class="section-label mono">02 — Stack</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-title">Tools I trust<br />in production.</h2>
+
+        <div class="stack-grid">
+          <div class="stack-category">
+            <h3 class="stack-cat-title">Algorithmic Trading</h3>
+            <ul class="stack-list">
+              <li><span class="mono tag">MetaTrader 5</span> Platform &amp; Expert Advisors</li>
+              <li><span class="mono tag">MQL5</span> Custom indicators &amp; trade logic</li>
+              <li><span class="mono tag">Python</span> Backtesting, signal generation</li>
+              <li><span class="mono tag">Node.js</span> Trade copier servers &amp; APIs</li>
+            </ul>
+          </div>
+
+          <div class="stack-category">
+            <h3 class="stack-cat-title">Backend &amp; Infrastructure</h3>
+            <ul class="stack-list">
+              <li><span class="mono tag">Node.js</span> Core runtime for most systems</li>
+              <li><span class="mono tag">Fastify</span> High-performance REST APIs</li>
+              <li><span class="mono tag">Go</span> Concurrent, low-latency services</li>
+              <li><span class="mono tag">PostgreSQL / SQLite</span> Storage layer</li>
+              <li><span class="mono tag">Redis</span> Caching &amp; pub/sub</li>
+            </ul>
+          </div>
+
+          <div class="stack-category">
+            <h3 class="stack-cat-title">Automation &amp; Bots</h3>
+            <ul class="stack-list">
+              <li><span class="mono tag">Puppeteer</span> Headless browser automation</li>
+              <li><span class="mono tag">Playwright</span> Cross-browser testing &amp; scraping</li>
+              <li><span class="mono tag">Chrome Extensions</span> Manifest V3, content scripts</li>
+              <li><span class="mono tag">cron / PM2</span> Scheduling &amp; process management</li>
+            </ul>
+          </div>
+
+          <div class="stack-category">
+            <h3 class="stack-cat-title">Tooling &amp; DevOps</h3>
+            <ul class="stack-list">
+              <li><span class="mono tag">Git / GitHub</span> Version control</li>
+              <li><span class="mono tag">Linux / VPS</span> Self-managed servers</li>
+              <li><span class="mono tag">Docker</span> Containerized deployments</li>
+              <li><span class="mono tag">Nginx</span> Reverse proxy &amp; serving</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects">
+    <div class="container section-grid">
+      <div class="section-label-col">
+        <span class="section-label mono">03 — Projects</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-title">Systems built.<br />Problems solved.</h2>
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div>
+              <span class="project-num mono">01</span>
+              <h3 class="project-title">MT5 Trade Copier System</h3>
+            </div>
+            <div class="project-tags">
+              <span class="tag mono">MT5</span>
+              <span class="tag mono">Node.js</span>
+              <span class="tag mono">MQL5</span>
+              <span class="tag mono">REST API</span>
+            </div>
+          </div>
+          <div class="project-grid">
+            <div class="project-block">
+              <h4>Problem</h4>
+              <p>Retail traders managing multiple MT5 accounts needed trades executed simultaneously across all accounts — with zero latency and no manual intervention.</p>
+            </div>
+            <div class="project-block">
+              <h4>Solution</h4>
+              <p>Built a real-time trade copier: a Node.js server acts as the bridge between a master MT5 account and multiple slave accounts. An MQL5 EA on the master pushes trade signals via HTTP; the server fans them out instantly to all connected accounts.</p>
+            </div>
+            <div class="project-block">
+              <h4>Impact</h4>
+              <p>Trades copied in under 80ms average. Supports 10+ slave accounts per master. Zero missed trades in 6 months of live operation. Eliminated the need for paid third-party copy services.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div>
+              <span class="project-num mono">02</span>
+              <h3 class="project-title">Government Form Automation Bot</h3>
+            </div>
+            <div class="project-tags">
+              <span class="tag mono">Puppeteer</span>
+              <span class="tag mono">Node.js</span>
+              <span class="tag mono">SQLite</span>
+            </div>
+          </div>
+          <div class="project-grid">
+            <div class="project-block">
+              <h4>Problem</h4>
+              <p>Tehsil-level government operators were manually filling identical forms on citizen portals — each submission taking 8–12 minutes. Hundreds of submissions daily created backlogs and errors.</p>
+            </div>
+            <div class="project-block">
+              <h4>Solution</h4>
+              <p>A Puppeteer-based automation bot that reads citizen data from a local SQLite database and submits forms programmatically. Includes CAPTCHA detection logic, retry handling, and a simple dashboard showing submission status.</p>
+            </div>
+            <div class="project-block">
+              <h4>Impact</h4>
+              <p>Submission time dropped from ~10 min to under 45 seconds. Operators now queue batches overnight. Error rate reduced by 90%. Used daily in active tehsil offices.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div>
+              <span class="project-num mono">03</span>
+              <h3 class="project-title">Chrome Extension for VLE Workflows</h3>
+            </div>
+            <div class="project-tags">
+              <span class="tag mono">Chrome Extension</span>
+              <span class="tag mono">Manifest V3</span>
+              <span class="tag mono">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-grid">
+            <div class="project-block">
+              <h4>Problem</h4>
+              <p>Village Level Entrepreneurs (VLEs) interacting with government portals faced repetitive multi-step flows for every citizen request — login, navigate, fill, verify, submit, download. All manual.</p>
+            </div>
+            <div class="project-block">
+              <h4>Solution</h4>
+              <p>A Chrome Extension using content scripts to inject automation logic into existing portal pages. The extension detects page state, fills fields from cached citizen profiles, and automates navigation steps — all without modifying the portal itself.</p>
+            </div>
+            <div class="project-block">
+              <h4>Impact</h4>
+              <p>Each citizen request now takes 2–3 minutes instead of 15+. Extension distributed to 40+ VLE operators. Zero portal compatibility issues — works with the live production portal.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div>
+              <span class="project-num mono">04</span>
+              <h3 class="project-title">EUR/USD Algorithmic Trading Bot</h3>
+            </div>
+            <div class="project-tags">
+              <span class="tag mono">Python</span>
+              <span class="tag mono">MQL5</span>
+              <span class="tag mono">MT5</span>
+              <span class="tag mono">Pandas</span>
+            </div>
+          </div>
+          <div class="project-grid">
+            <div class="project-block">
+              <h4>Problem</h4>
+              <p>Discretionary trading on EUR/USD introduces emotion, inconsistency, and missed setups during off-hours. A systematic edge needed to be codified and automated.</p>
+            </div>
+            <div class="project-block">
+              <h4>Solution</h4>
+              <p>A Python-based strategy engine that analyses price action, session timing, and momentum indicators to generate trade signals. Signals feed into an MQL5 EA that executes on MT5 with ATR-based SL/TP and position sizing logic.</p>
+            </div>
+            <div class="project-block">
+              <h4>Impact</h4>
+              <p>Backtested over 3 years of tick data. Consistent positive expectancy across London and NY sessions. Runs 24/5 on a VPS — no manual intervention required.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience">
+    <div class="container section-grid">
+      <div class="section-label-col">
+        <span class="section-label mono">04 — Experience</span>
+      </div>
+      <div class="section-content-col">
+        <h2 class="section-title">How I work.</h2>
+
+        <div class="exp-blocks">
+          <div class="exp-block">
+            <span class="exp-icon">⬡</span>
+            <div>
+              <h3>Solo, end-to-end ownership</h3>
+              <p>I own every phase: requirements, architecture, implementation, testing, deployment. No handoffs means no context loss, no delays, no ambiguity. You deal with one person who knows the entire system.</p>
+            </div>
+          </div>
+          <div class="exp-block">
+            <span class="exp-icon">⬡</span>
+            <div>
+              <h3>Production-first mindset</h3>
+              <p>I don't build demos. Every system I deliver is built to handle real load, real edge cases, and real failures. Error handling, logging, retry logic, and monitoring are non-negotiable — not afterthoughts.</p>
+            </div>
+          </div>
+          <div class="exp-block">
+            <span class="exp-icon">⬡</span>
+            <div>
+              <h3>Speed without shortcuts</h3>
+              <p>I move fast because I've solved similar problems before. I reuse proven patterns, avoid over-engineering, and ship incrementally. Fast delivery doesn't mean cutting corners — it means knowing what to build and what to skip.</p>
+            </div>
+          </div>
+          <div class="exp-block">
+            <span class="exp-icon">⬡</span>
+            <div>
+              <h3>Cost reduction as a core metric</h3>
+              <p>Every system I build is evaluated by one question: does it reduce cost or increase throughput? Whether it's cutting man-hours in government workflows or eliminating trading infrastructure fees, ROI is always in scope.</p>
+            </div>
+          </div>
+          <div class="exp-block">
+            <span class="exp-icon">⬡</span>
+            <div>
+              <h3>Domain depth in trading &amp; automation</h3>
+              <p>I've worked deeply in two specialized domains: algorithmic forex trading and government/enterprise workflow automation. This isn't surface-level familiarity — it's years of real production experience in both.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact">
+    <div class="container contact-inner">
+      <span class="section-label mono">05 — Contact</span>
+      <h2 class="contact-title">
+        Have a system<br />that needs building?
+      </h2>
+      <p class="contact-sub">
+        I'm available for contract work, consulting, and long-term partnerships.
+        If you have a real problem that automation or systems engineering can solve,
+        let's talk.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:your@email.com" class="contact-link">
+          <span class="mono">your@email.com</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="contact-link">
+          <span class="mono">github.com/yourusername</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="mono small">Built with plain HTML, CSS &amp; JS — no frameworks.</span>
+      <span class="mono small accent">© 2025</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
