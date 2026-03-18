@@ -84,7 +84,8 @@
             When I take on a problem, the goal is always the same: make the system
             work reliably at scale, then make it redundant to human effort. That
             mindset has driven every project I've delivered — from biometric RTO
-            hardware integrations to AI-powered contract analysis tools.
+            hardware integrations and AI-powered contract analysis to custom
+            UDP transport layers built from scratch in Go.
           </p>
         </div>
         <div class="about-stats">
@@ -93,7 +94,7 @@
             <span class="stat-label">Years in production</span>
           </div>
           <div class="stat">
-            <span class="stat-num accent">9</span>
+            <span class="stat-num accent">10</span>
             <span class="stat-label">Production systems shipped</span>
           </div>
           <div class="stat">
@@ -113,7 +114,6 @@
       </div>
       <div class="section-content-col">
         <h2 class="section-title">Tools I trust<br />in production.</h2>
-
         <div class="stack-grid">
 
           <div class="stack-category">
@@ -131,7 +131,8 @@
             <ul class="stack-list">
               <li><span class="mono tag">Node.js</span> Core runtime for most systems</li>
               <li><span class="mono tag">Fastify</span> High-performance REST APIs</li>
-              <li><span class="mono tag">Go</span> Concurrent, low-latency services</li>
+              <li><span class="mono tag">Go</span> Concurrent, low-latency services &amp; networking</li>
+              <li><span class="mono tag">UDP / Sockets</span> Custom transport &amp; protocol design</li>
               <li><span class="mono tag">PostgreSQL / SQLite</span> Storage layer</li>
               <li><span class="mono tag">Redis</span> Caching &amp; pub/sub</li>
             </ul>
@@ -195,7 +196,7 @@
             </div>
             <div class="project-block">
               <h4>Impact</h4>
-              <p>Identifies risky clauses in seconds. Output is plain-language risk summaries — not raw annotations. This is applied AI where it actually works: precise pattern detection over structured text, without the overhead of a large model.</p>
+              <p>Identifies risky clauses in seconds. Output is plain-language risk summaries — not raw annotations. Applied AI where it actually works: precise pattern detection over structured text, without the overhead of a large model.</p>
             </div>
           </div>
         </article>
@@ -225,7 +226,7 @@
             </div>
             <div class="project-block">
               <h4>Impact</h4>
-              <p>Per-case processing time: from ~10 minutes to under 60 seconds. Staff dependency at affected desks reduced significantly. Error rate down 90%. Operators now handle 5× more cases per shift. Running daily in active tehsil offices.</p>
+              <p>Per-case processing time dropped from ~10 minutes to under 60 seconds. Staff dependency at affected desks reduced significantly. Error rate down 90%. Operators now handle 5x more cases per shift. Running daily in active tehsil offices.</p>
             </div>
           </div>
         </article>
@@ -251,11 +252,11 @@
             </div>
             <div class="project-block">
               <h4>Solution</h4>
-              <p>Built an automated notification pipeline that monitors case status changes and triggers WhatsApp and SMS alerts to registered farmers. Covers: pending KYC actions, document requirements, and payment disbursement confirmations. Fully automated — zero staff involvement per notification sent.</p>
+              <p>Built an automated notification pipeline that monitors case status changes and triggers WhatsApp and SMS alerts to registered farmers. Covers pending KYC actions, document requirements, and payment disbursement confirmations. Fully automated — zero staff involvement per notification sent.</p>
             </div>
             <div class="project-block">
               <h4>Impact</h4>
-              <p>Physical office visits for status queries reduced by ~90%. Improved transparency for farmers who previously had no visibility into their cases. Eliminated a class of service requests that previously consumed desk staff time daily.</p>
+              <p>Physical office visits for status queries reduced by ~90%. Improved transparency for farmers who previously had no visibility into their cases. Eliminated a whole class of service requests that previously consumed desk staff time daily.</p>
             </div>
           </div>
         </article>
@@ -285,7 +286,7 @@
             </div>
             <div class="project-block">
               <h4>Impact</h4>
-              <p>Reduces per-transaction friction significantly. Encourages farmers to engage with government services digitally rather than through paid intermediaries. Creates a sustainable, predictable service model for operators while lowering the annual cost for farmers.</p>
+              <p>Reduces per-transaction friction significantly. Encourages farmers to engage with government services digitally rather than through paid intermediaries. Creates a sustainable service model for operators while lowering the annual cost for end users.</p>
             </div>
           </div>
         </article>
@@ -315,7 +316,7 @@
             </div>
             <div class="project-block">
               <h4>Impact</h4>
-              <p>Eliminated manual identity verification steps at RTO desks. Reduced per-applicant processing time and introduced a reliable, logged audit trail. Harder to bypass than manual checks — fraud risk reduced structurally, not procedurally.</p>
+              <p>Eliminated manual identity verification steps at RTO desks. Reduced per-applicant processing time and introduced a reliable, logged audit trail for every verification event. Fraud risk reduced structurally, not just procedurally.</p>
             </div>
           </div>
         </article>
@@ -341,11 +342,11 @@
             </div>
             <div class="project-block">
               <h4>Solution</h4>
-              <p>An MQL5 EA on the master account pushes trade signals to a Node.js relay server via HTTP. The server fans signals out in parallel to all connected slave accounts in real time. Supports dynamic slave registration, configurable lot scaling per account, and automatic reconnection on socket drop.</p>
+              <p>An MQL5 Expert Advisor on the master account pushes trade signals to a Node.js relay server via HTTP. The server fans signals out in parallel to all connected slave accounts in real time. Supports dynamic slave registration, configurable lot scaling per account, and automatic reconnection on socket drop.</p>
             </div>
             <div class="project-block">
               <h4>Impact</h4>
-              <p>Average copy latency under 80ms. Supports 10+ slave accounts per master. Six months of live operation, zero missed trades. Eliminated dependency on third-party copy services — full control, zero recurring infrastructure cost.</p>
+              <p>Average copy latency under 80ms. Supports 10+ slave accounts per master. Six months of live operation with zero missed trades. Eliminated dependency on third-party copy services entirely — full control, zero recurring infrastructure cost.</p>
             </div>
           </div>
         </article>
@@ -380,6 +381,36 @@
           </div>
         </article>
 
+        <!-- Project 08: UDP Transport System -->
+        <article class="project-card">
+          <div class="project-header">
+            <div>
+              <span class="project-num mono">08</span>
+              <h3 class="project-title">UDP Transport System — Custom Low-Level Networking in Go</h3>
+            </div>
+            <div class="project-tags">
+              <span class="tag mono">Go</span>
+              <span class="tag mono">UDP</span>
+              <span class="tag mono">Android</span>
+              <span class="tag mono">Socket Programming</span>
+            </div>
+          </div>
+          <div class="project-grid">
+            <div class="project-block">
+              <h4>Problem</h4>
+              <p>Most communication systems rely on TCP or third-party tunneling services, which introduce overhead, latency, and external dependencies. Building a custom transport layer from scratch — with full control over packet flow, message framing, and routing behavior — requires working at the socket level without abstractions.</p>
+            </div>
+            <div class="project-block">
+              <h4>Solution</h4>
+              <p>Built a UDP-based transport system in Go that handles direct system-to-system communication with custom message framing and packet flow logic. An Android client acts as a connected endpoint, communicating with the Go server over raw UDP sockets. The architecture explores proxy-like and tunneling patterns — routing traffic through a controlled relay without depending on any third-party service or protocol library.</p>
+            </div>
+            <div class="project-block">
+              <h4>Impact</h4>
+              <p>Demonstrates practical depth in low-level networking: socket lifecycle, UDP datagram handling, and custom protocol design. Serves as a working foundation for future distributed systems that require direct, low-overhead communication channels. The Go server and Android client together validate the full transport path end-to-end.</p>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -392,8 +423,8 @@
       </div>
       <div class="section-content-col">
         <h2 class="section-title">How I work.</h2>
-
         <div class="exp-blocks">
+
           <div class="exp-block">
             <span class="exp-icon">⬡</span>
             <div>
@@ -401,6 +432,7 @@
               <p>I own every phase: requirements, architecture, implementation, testing, deployment. No handoffs means no context loss, no delays, no ambiguity. One person who knows the entire system — from database schema to production config.</p>
             </div>
           </div>
+
           <div class="exp-block">
             <span class="exp-icon">⬡</span>
             <div>
@@ -408,6 +440,7 @@
               <p>I don't build prototypes and call them done. Every system I deliver is designed for real load, real edge cases, and real failures. Error handling, retry logic, logging, and graceful degradation are built in from day one — not added later.</p>
             </div>
           </div>
+
           <div class="exp-block">
             <span class="exp-icon">⬡</span>
             <div>
@@ -415,6 +448,7 @@
               <p>I move fast because I've solved similar problems before. Proven patterns, no over-engineering, incremental delivery. Speed comes from experience and clarity — not from skipping reliability.</p>
             </div>
           </div>
+
           <div class="exp-block">
             <span class="exp-icon">⬡</span>
             <div>
@@ -422,13 +456,15 @@
               <p>Every system I build is measured by one question: does it reduce cost or increase throughput? Whether cutting man-hours at a government desk, eliminating trading infrastructure fees, or reducing farmer visits by 90% — ROI is always in scope.</p>
             </div>
           </div>
+
           <div class="exp-block">
             <span class="exp-icon">⬡</span>
             <div>
-              <h3>Deep domain experience across three fields</h3>
-              <p>Government workflow automation, algorithmic trading infrastructure, applied AI — not surface-level familiarity, but years of production systems in each. I understand the real constraints, edge cases, and what actually works at the operator level.</p>
+              <h3>Deep domain experience across multiple fields</h3>
+              <p>Government workflow automation, algorithmic trading infrastructure, applied AI, and low-level networking — not surface-level familiarity, but years of production systems in each. I understand the real constraints, edge cases, and what actually works at the operator level.</p>
             </div>
           </div>
+
         </div>
       </div>
     </div>
